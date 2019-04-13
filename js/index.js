@@ -69,6 +69,15 @@ signMeUpBtn.addEventListener('click', function(event){
 
 inputElement.addEventListener('keydown', function(event){
     alert('key pressed')
+   
 })
-
+inputElement.addEventListener('focus', function(event) {
+    event.target.style.backgroundColor = 'orange'
+})
+inputElement.addEventListener('blur', function(event) {
+    event.target.style.backgroundColor = 'white'
+})
+contentPick.addEventListener('contextmenu', function(event){
+    event.target.style.background = 'orange'
+})
 
