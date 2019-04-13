@@ -59,3 +59,16 @@ contentSectionText.addEventListener('click', function(event){
     event.stopPropagation()
     event.target.style.color = "red"
 })
+
+const inputElement = document.createElement('input')
+const contentPick = document.querySelector('.content-pick')
+const signMeUpBtn = document.querySelector('.destination .btn')
+signMeUpBtn.addEventListener('click', function(event){
+    contentPick.appendChild(inputElement)
+})
+
+inputElement.addEventListener('keydown', function(event){
+    alert('key pressed')
+})
+
+
