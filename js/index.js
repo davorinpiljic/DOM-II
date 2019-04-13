@@ -81,3 +81,7 @@ contentPick.addEventListener('contextmenu', function(event){
     event.target.style.background = 'orange'
 })
 
+const nav = document.querySelector('nav')
+nav.addEventListener('click', function(event){
+    event.preventDefault()
+})
