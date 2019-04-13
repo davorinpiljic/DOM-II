@@ -50,4 +50,12 @@ midPic2.addEventListener('dragend', function(event){
     document.body.style.backgroundSize = "cover"
 })
 
-
+const contentSection = document.querySelector('.content-section')
+contentSection.addEventListener('click', function(event){
+    event.target.style.fontWeight = "bold"
+})
+const contentSectionText = document.querySelector('.content-section p') 
+contentSectionText.addEventListener('click', function(event){
+    event.stopPropagation()
+    event.target.style.color = "red"
+})
